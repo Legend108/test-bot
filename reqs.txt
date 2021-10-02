@@ -1,0 +1,76 @@
+Players for each position:
+gk = 32
+rwb = 10
+rb = 40
+cb = 56
+lb = 40
+lwb = 10
+cdm = 31
+rm = 31
+cm = 32
+lm = 31
+cam = 31
+cf = 30
+rw = 41
+st = 44
+lw = 41
+
+Total players = 500
+
+JSON format for players
+// Stats will be in integer values
+{
+  "id": null,
+  "name": "Name",
+  "position": "ST",
+  "age": 28,
+  "w": "Weak foot rating in integer value",
+  "s": "Skill move rating in integer value",
+  "wr": "Workrate in array as integer values [attacking wr, defensive wr] (High = 2, Medium = 1, Low = 0",
+
+  "acc": "Acceleration",
+  "ss": "Sprint Speed",
+  "pace": "(acc+ss)/2",
+
+  "posn": "Positioning",
+  "fn": "Finishing",
+  "sp": "Shot Power",
+  "ls": "Long shots",
+  "vo": "Volleys",
+  "pk": "Penalties",
+  "shooting": "(posn+fn+sp+ls+vo+pk)/6",
+
+  "vs": "Vision",
+  "cr": "Crossing",
+  "fk": "Freekick Accuracy",
+  "sh": "Short passing",
+  "lp": "Long passing",
+  "cu": "Curve",
+  "passing": "(vs+cr+fk+sh+lp+cu)/6",
+
+  "ag": "Agility",
+  "bl": "Balance",
+  "rt": "Reactions",
+  "bc": "Ball Control",
+  "db": "Dribbling",
+  "co": "Composure",
+  "dribbling": "(ag+bl+rt+bc+db+co)/6",
+
+  "ic": "Interceptions",
+  "he": "Heading Accuracy",
+  "mk": "Marking",
+  "st": "Standing Tackle",
+  "sl": "Sliding Tackle",
+  "defending": "(ic+he+mk+st+sl)/5",
+
+  "jp": "Jumping",
+  "sm": "Stamina",
+  "sr": "Strength",
+  "ar": "Aggression",
+  "physical": "(jp+sm+sr+ar)/4",
+
+  "ovr": "Overall in integer",
+  "pot": "Player potential",
+  "mv": "Market Value",
+  "wg": "Wage"
+}
